@@ -1,0 +1,403 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>LearnMate – Technologies Used</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI",system-ui,sans-serif;background:#f0f4ff;color:#1e293b;font-size:14px;line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding:32px 24px}
+h1{font-size:1.75rem;font-weight:900}
+h2{font-size:1.05rem;font-weight:700;margin-bottom:10px}
+h3{font-size:.92rem;font-weight:700;margin-bottom:2px}
+p{color:#475569;font-size:.85rem}
+.hero{background:linear-gradient(135deg,#1a6cf6,#6d28d9);color:white;border-radius:14px;padding:24px 28px;margin-bottom:24px}
+.hero p{color:rgba(255,255,255,.85);font-size:.92rem;margin-top:6px}
+.section{margin-bottom:28px}
+.section-label{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid #e2e8f0}
+.card{background:white;border:1px solid #e2e8f0;border-radius:12px;padding:18px;margin-bottom:12px}
+.card-accent{border-left:4px solid}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.badge{display:inline-flex;align-items:center;padding:2px 9px;border-radius:99px;font-size:.72rem;font-weight:700;margin:2px}
+.b-blue{background:#dbeafe;color:#1d4ed8}
+.b-purple{background:#ede9fe;color:#6d28d9}
+.b-green{background:#dcfce7;color:#15803d}
+.b-orange{background:#fed7aa;color:#c2410c}
+.b-gray{background:#f1f5f9;color:#475569}
+.b-red{background:#fee2e2;color:#991b1b}
+.b-cyan{background:#cffafe;color:#0e7490}
+.b-ibm{background:#0062ff;color:white}
+.agent-row{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid #f1f5f9}
+.agent-row:last-child{border-bottom:none}
+.num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.85rem;flex-shrink:0;color:white}
+.tech-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f8faff}
+.tech-row:last-child{border-bottom:none}
+.tech-name{font-weight:700;font-size:.88rem}
+.tech-ver{font-family:monospace;font-size:.75rem;color:#6d28d9;background:#ede9fe;padding:1px 6px;border-radius:4px}
+.tech-use{font-size:.78rem;color:#64748b}
+code{font-family:monospace;background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:.8rem;color:#1e40af}
+.flow{display:flex;align-items:center;gap:0;flex-wrap:wrap;margin-top:10px}
+.flow-box{background:#f8faff;border:1px solid #e2e8f0;border-radius:8px;padding:8px 14px;font-size:.8rem;font-weight:600;text-align:center}
+.flow-arrow{color:#94a3b8;font-size:1.1rem;padding:0 6px}
+.stat-box{background:white;border:1px solid #e2e8f0;border-radius:12px;padding:16px;text-align:center}
+.stat-num{font-size:1.8rem;font-weight:900}
+footer{text-align:center;margin-top:40px;padding-top:16px;border-top:1px solid #e5e7eb;color:#94a3b8;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  
+  <div class="hero">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
+      <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.4rem">L</div>
+      <div>
+        <h1 style="font-size:1.5rem;color:white">LearnMate AI — Technologies Used</h1>
+        <p style="margin:0">AICTE Problem Statement #12 · Agentic AI for Personalized Course Pathways</p>
+      </div>
+    </div>
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">
+      <span class="badge b-ibm">IBM Granite 13B</span>
+      <span class="badge b-ibm">IBM watsonx.ai</span>
+      <span class="badge b-ibm">IBM Cloudant</span>
+      <span class="badge" style="background:rgba(255,255,255,.2);color:white">Python 3.13</span>
+      <span class="badge" style="background:rgba(255,255,255,.2);color:white">Flask 3.x</span>
+      <span class="badge" style="background:rgba(255,255,255,.2);color:white">React 18</span>
+      <span class="badge" style="background:rgba(255,255,255,.2);color:white">Vite 5</span>
+    </div>
+  </div>
+
+  
+  <div class="grid3" style="margin-bottom:24px">
+    <div class="stat-box">
+      <div class="stat-num" style="color:#1a6cf6">5</div>
+      <div style="color:#64748b;font-size:.82rem">AI Agents</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" style="color:#6d28d9">2</div>
+      <div style="color:#64748b;font-size:.82rem">IBM Granite Models</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" style="color:#16a34a">10</div>
+      <div style="color:#64748b;font-size:.82rem">REST Endpoints</div>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-label">Agentic AI — 5 Specialized Agents</div>
+    <div class="card">
+
+      <div class="agent-row">
+        <div class="num" style="background:#1a6cf6">1</div>
+        <div>
+          <h3>Student Assessment Agent</h3>
+          <p>Evaluates students' existing skills through two modes: (1) <strong>Conversational</strong> — IBM Granite Chat model conducts a multi-turn dialogue, then extracts a structured JSON assessment (domain, level, score, strengths, gaps). (2) <strong>Quick</strong> — self-rating on a 1–5 scale, augmented by Granite Instruct to produce detailed gap analysis.</p>
+          <div style="margin-top:6px"><code>agents/assessment_agent.py</code> · <span class="badge b-blue">IBM Granite Chat</span> <span class="badge b-purple">JSON extraction</span></div>
+        </div>
+      </div>
+
+      <div class="agent-row">
+        <div class="num" style="background:#6d28d9">2</div>
+        <div>
+          <h3>Learning Path Agent (Roadmap Agent)</h3>
+          <p>Creates personalized 5–8 step roadmaps using IBM Granite Instruct. Takes student profile (domain, skill level, weekly hours, learning style, goals) as a structured prompt and returns a full roadmap JSON. Automatically injects curated free courses from the IBM SkillsBuild catalog into each step, progressively escalating difficulty.</p>
+          <div style="margin-top:6px"><code>agents/roadmap_agent.py</code> · <span class="badge b-blue">IBM Granite Instruct</span> <span class="badge b-purple">Prompt Engineering</span> <span class="badge b-green">Course Catalog</span></div>
+        </div>
+      </div>
+
+      <div class="agent-row">
+        <div class="num" style="background:#0ea5e9">3</div>
+        <div>
+          <h3>Course Recommendation Agent</h3>
+          <p>Integrated into the Roadmap Agent and Course Catalog utility. Maps 8 learning domains × 4 skill levels to curated courses from IBM SkillsBuild, freeCodeCamp, Coursera/IBM, The Odin Project, TryHackMe, Google, and more. Courses include metadata: provider, URL, duration, free/paid, rating, and topics covered.</p>
+          <div style="margin-top:6px"><code>utils/course_catalog.py</code> · <span class="badge b-green">IBM SkillsBuild</span> <span class="badge b-blue">Coursera/IBM</span> <span class="badge b-orange">freeCodeCamp</span></div>
+        </div>
+      </div>
+
+      <div class="agent-row">
+        <div class="num" style="background:#16a34a">4</div>
+        <div>
+          <h3>Progress Tracking Agent</h3>
+          <p>Monitors completed milestones at step-level granularity (0–100% per step, auto-status: not_started / in_progress / completed). Calculates overall roadmap progress. Generates IBM Granite–powered AI feedback on step completion and produces structured weekly progress reports with achievements, focus areas, and estimated time-to-completion.</p>
+          <div style="margin-top:6px"><code>agents/progress_agent.py</code> · <span class="badge b-blue">IBM Granite Instruct</span> <span class="badge b-green">Progress Logging</span></div>
+        </div>
+      </div>
+
+      <div class="agent-row">
+        <div class="num" style="background:#d97706">5</div>
+        <div>
+          <h3>Adaptive Learning Agent</h3>
+          <p>Updates learning pathways based on student feedback and performance. The <code>adapt_roadmap()</code> method sends current step, overall progress, and student feedback to IBM Granite Instruct, which returns JSON-structured roadmap adjustments (which step to modify, what to change, why). Also powers the <strong>AI Coach Chat</strong> — a persistent conversational interface with context memory (last 20 messages).</p>
+          <div style="margin-top:6px"><code>agents/roadmap_agent.py → adapt_roadmap()</code> · <span class="badge b-blue">IBM Granite Chat</span> <span class="badge b-purple">Context Memory</span> <span class="badge b-orange">Adaptive JSON</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-label">IBM Cloud Services (Mandatory)</div>
+    <div class="grid2">
+
+      <div class="card card-accent" style="border-left-color:#0062ff">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="background:#0062ff;color:white;border-radius:6px;padding:3px 8px;font-size:.72rem;font-weight:800">IBM</span>
+          <h3>watsonx.ai</h3>
+        </div>
+        <p>Core AI inference platform. All Granite model calls route through the <code>ibm-watsonx-ai</code> Python SDK via <code>ModelInference</code> and <code>APIClient</code>. Credentials configured via <code>IBM_WATSONX_API_KEY</code> + <code>IBM_WATSONX_PROJECT_ID</code>.</p>
+        <div style="margin-top:8px">
+          <span class="badge b-ibm">ibm-watsonx-ai 1.1.2</span>
+        </div>
+      </div>
+
+      <div class="card card-accent" style="border-left-color:#0062ff">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="background:#0062ff;color:white;border-radius:6px;padding:3px 8px;font-size:.72rem;font-weight:800">IBM</span>
+          <h3>Granite 13B Instruct v2</h3>
+        </div>
+        <p>Used for roadmap generation, skill assessment prompts, weekly report generation, adaptive adjustment suggestions, and completion feedback. Returns structured JSON via few-shot prompting.</p>
+        <div style="margin-top:8px"><code>ibm/granite-13b-instruct-v2</code></div>
+      </div>
+
+      <div class="card card-accent" style="border-left-color:#6d28d9">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="background:#0062ff;color:white;border-radius:6px;padding:3px 8px;font-size:.72rem;font-weight:800">IBM</span>
+          <h3>Granite 13B Chat v2</h3>
+        </div>
+        <p>Powers the conversational assessment dialogue and the AI Coach Chat interface. Uses Granite's native <code>&lt;|system|&gt;</code> / <code>&lt;|user|&gt;</code> / <code>&lt;|assistant|&gt;</code> prompt format with a sliding context window of last 20 messages.</p>
+        <div style="margin-top:8px"><code>ibm/granite-13b-chat-v2</code></div>
+      </div>
+
+      <div class="card card-accent" style="border-left-color:#16a34a">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="background:#0062ff;color:white;border-radius:6px;padding:3px 8px;font-size:.72rem;font-weight:800">IBM</span>
+          <h3>Cloudant (NoSQL DB)</h3>
+        </div>
+        <p>Cloud-hosted NoSQL database for persisting student profiles and roadmaps. Integrated via <code>ibm-cloudant</code> SDK with IAM auth. Auto-falls back to in-memory dict store when not configured — so the app runs locally without Cloudant.</p>
+        <div style="margin-top:8px">
+          <span class="badge b-green">ibm-cloudant 0.9.2</span>
+          <span class="badge b-gray">Memory fallback</span>
+        </div>
+      </div>
+
+      <div class="card card-accent" style="border-left-color:#0ea5e9">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="background:#0062ff;color:white;border-radius:6px;padding:3px 8px;font-size:.72rem;font-weight:800">IBM</span>
+          <h3>SkillsBuild (Course Catalog)</h3>
+        </div>
+        <p>IBM's free learning platform courses are included in the curated course catalog across all 8 domains. Every roadmap step links directly to IBM SkillsBuild resources alongside freeCodeCamp, Coursera/IBM specializations, and Google certificates.</p>
+        <div style="margin-top:8px"><code>utils/course_catalog.py</code></div>
+      </div>
+
+      <div class="card card-accent" style="border-left-color:#94a3b8">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="background:#0062ff;color:white;border-radius:6px;padding:3px 8px;font-size:.72rem;font-weight:800">IBM</span>
+          <h3>Slate 125M Embeddings</h3>
+        </div>
+        <p>Configured for semantic skill matching and domain similarity. Available via the same watsonx.ai credentials.</p>
+        <div style="margin-top:8px"><code>ibm/slate-125m-english-rtrvr</code></div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-label">Backend — Python / Flask</div>
+    <div class="card">
+      <div class="tech-row">
+        <div><div class="tech-name">Python</div><div class="tech-use">Runtime language</div></div>
+        <span class="tech-ver">3.13</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">Flask</div><div class="tech-use">REST API web framework with Blueprints for modular routing</div></div>
+        <span class="tech-ver">3.0.3</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">Flask-CORS</div><div class="tech-use">Cross-Origin Resource Sharing for React ↔ Flask communication</div></div>
+        <span class="tech-ver">4.0.1</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">Flask-JWT-Extended</div><div class="tech-use">JWT authentication middleware</div></div>
+        <span class="tech-ver">4.6.0</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">python-dotenv</div><div class="tech-use">Loads all IBM credentials from .env into os.environ</div></div>
+        <span class="tech-ver">1.0.1</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">ibm-watsonx-ai</div><div class="tech-use">Official IBM SDK — ModelInference, APIClient, Credentials</div></div>
+        <span class="tech-ver">1.1.2</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">ibm-cloud-sdk-core</div><div class="tech-use">IAM authenticator for Cloudant and other IBM services</div></div>
+        <span class="tech-ver">3.20.3</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">ibm-cloudant</div><div class="tech-use">IBM Cloudant NoSQL document database SDK</div></div>
+        <span class="tech-ver">0.9.2</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">Pydantic</div><div class="tech-use">Data validation for request/response schemas</div></div>
+        <span class="tech-ver">2.7.4</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">Gunicorn</div><div class="tech-use">Production WSGI server for deployment</div></div>
+        <span class="tech-ver">22.0.0</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">python-json-logger</div><div class="tech-use">Structured JSON logging for production observability</div></div>
+        <span class="tech-ver">2.0.7</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">cachetools</div><div class="tech-use">In-memory LRU caching for API responses</div></div>
+        <span class="tech-ver">5.3.3</span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-label">Frontend — React / Vite</div>
+    <div class="card">
+      <div class="tech-row">
+        <div><div class="tech-name">React</div><div class="tech-use">UI component library — hooks-based, functional components throughout</div></div>
+        <span class="tech-ver">18.3.1</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">React Router DOM</div><div class="tech-use">Client-side routing: /dashboard, /roadmap/:id, /coach, /assess</div></div>
+        <span class="tech-ver">6.26.0</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">Axios</div><div class="tech-use">HTTP client for all API calls to the Flask backend</div></div>
+        <span class="tech-ver">1.7.4</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">Lucide React</div><div class="tech-use">Icon library for the dashboard UI</div></div>
+        <span class="tech-ver">0.441.0</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">Vite</div><div class="tech-use">Build tool and dev server with HMR; proxies /api → Flask:5000</div></div>
+        <span class="tech-ver">5.4.6</span>
+      </div>
+      <div class="tech-row">
+        <div><div class="tech-name">@vitejs/plugin-react</div><div class="tech-use">Babel-based JSX transform + React Fast Refresh</div></div>
+        <span class="tech-ver">4.3.1</span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-label">Frontend Pages &amp; Components</div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Onboarding.jsx</h3>
+        <p>3-step wizard: name/hours → domain interests + learning style → profile review &amp; creation. Creates student profile via POST /api/students/.</p>
+      </div>
+      <div class="card">
+        <h3>Dashboard.jsx</h3>
+        <p>Progress overview hero card, roadmap summary stats, AI adaptive recommendation panel, and generate-roadmap CTA backed by IBM Granite.</p>
+      </div>
+      <div class="card">
+        <h3>RoadmapView.jsx</h3>
+        <p>Full step-by-step roadmap with click-to-update progress buttons (25/50/75/100%), course links, skills gained, and tabbed Report + Adapt views.</p>
+      </div>
+      <div class="card">
+        <h3>CoachChat.jsx</h3>
+        <p>Real-time chat interface with IBM Granite. Starter prompts, message bubbles, typing indicator, persistent conversation history.</p>
+      </div>
+      <div class="card">
+        <h3>Assessment.jsx</h3>
+        <p>Domain selector + 5-level self-rating for quick assessment, or full conversational assessment via Granite Chat. Displays structured results.</p>
+      </div>
+      <div class="card">
+        <h3>StepCard.jsx</h3>
+        <p>Reusable roadmap step component: status badge, progress bar, skills gained chips, linked course cards, and progress update buttons.</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-label">Request Data Flow</div>
+    <div class="card">
+      <div class="flow">
+        <div class="flow-box">React UI<br /><span style="color:#94a3b8;font-size:.72rem">:3000</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">Axios<br /><span style="color:#94a3b8;font-size:.72rem">HTTP</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">Flask API<br /><span style="color:#94a3b8;font-size:.72rem">:5000</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">AI Agent<br /><span style="color:#94a3b8;font-size:.72rem">Python</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">IBM Granite<br /><span style="color:#94a3b8;font-size:.72rem">watsonx.ai</span></div>
+      </div>
+      <div class="flow" style="margin-top:8px">
+        <div class="flow-box">React UI</div>
+        <div class="flow-arrow">←</div>
+        <div class="flow-box">JSON Response</div>
+        <div class="flow-arrow">←</div>
+        <div class="flow-box">Flask API</div>
+        <div class="flow-arrow">←</div>
+        <div class="flow-box">Cloudant / Memory</div>
+        <div class="flow-arrow">←</div>
+        <div class="flow-box">Granite Output</div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-label">8 Supported Learning Domains</div>
+    <div class="card" style="display:flex;flex-wrap:wrap;gap:8px">
+      <span class="badge b-blue">Frontend Development</span>
+      <span class="badge b-purple">Backend Development</span>
+      <span class="badge b-orange">Full Stack Development</span>
+      <span class="badge b-green">Data Science &amp; ML</span>
+      <span class="badge b-red">Cybersecurity</span>
+      <span class="badge b-cyan">UI/UX Design</span>
+      <span class="badge b-gray">Mobile Development</span>
+      <span class="badge b-ibm">Cloud &amp; DevOps</span>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-label">Key Design Patterns &amp; Decisions</div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Singleton Granite Client</h3>
+        <p>One shared <code>GraniteClient</code> instance across all agents. Initialised once at startup, reused for all IBM Granite calls, with graceful demo-mode fallback when SDK is absent.</p>
+      </div>
+      <div class="card">
+        <h3>Structured JSON Prompting</h3>
+        <p>All IBM Granite prompts specify exact JSON output schemas. Responses parsed with regex + json.loads. Falls back to structured defaults if parsing fails — ensures the app never crashes on AI output variance.</p>
+      </div>
+      <div class="card">
+        <h3>Progressive Skill Escalation</h3>
+        <p>Course catalog injected per step: every 2 steps the difficulty level escalates (beginner → intermediate → advanced), ensuring smooth learning curve.</p>
+      </div>
+      <div class="card">
+        <h3>Dual Storage Layer</h3>
+        <p>IBM Cloudant for production persistence with automatic in-memory dict fallback for local dev. Same CRUD interface regardless of backend, transparent to agents.</p>
+      </div>
+      <div class="card">
+        <h3>Sliding Context Window</h3>
+        <p>Conversation history capped at 20 messages, last 8–10 passed to Granite per turn — balances context richness against token limits on IBM Cloud Lite tier.</p>
+      </div>
+      <div class="card">
+        <h3>Blueprint-based Routing</h3>
+        <p>Flask <code>Blueprint</code>s separate student routes from roadmap routes. Clean separation of concerns: each agent is independently testable and swappable.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>Made with IBM Bob  ·  AICTE Problem Statement #12 — Agentic AI for Personalized Course Pathways</footer>
+</div>
+</body>
+</html>

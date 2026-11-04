@@ -1,0 +1,454 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>LearnMate – Architectural Blueprint</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#0d1117;font-family:-apple-system,"Segoe UI",system-ui,sans-serif;color:#e2e8f0;display:flex;flex-direction:column;align-items:center;padding:32px 16px}
+  h1{font-size:1.5rem;font-weight:900;color:#fff;margin-bottom:4px;text-align:center}
+  .sub{color:#94a3b8;font-size:.85rem;margin-bottom:28px;text-align:center}
+  svg{max-width:100%;height:auto}
+  .legend{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:20px}
+  .leg{display:flex;align-items:center;gap:7px;font-size:.78rem;color:#94a3b8}
+  .leg-dot{width:12px;height:12px;border-radius:3px}
+  footer{margin-top:32px;color:#475569;font-size:.72rem;border-top:1px solid #1e293b;padding-top:12px;width:100%;text-align:center}
+</style>
+</head>
+<body>
+
+<h1>LearnMate AI — Architectural Blueprint</h1>
+<p class="sub">AICTE Problem Statement #12 · Agentic AI for Personalized Course Pathways</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900">
+  <defs>
+    
+    
+      <stop offset="0%"></stop>
+      <stop offset="100%"></stop>
+    
+    
+      <stop offset="0%"></stop>
+      <stop offset="100%"></stop>
+    
+    
+      <stop offset="0%"></stop>
+      <stop offset="100%"></stop>
+    
+    
+      <stop offset="0%"></stop>
+      <stop offset="100%"></stop>
+    
+    
+      <stop offset="0%"></stop>
+      <stop offset="100%"></stop>
+    
+    
+      <stop offset="0%"></stop>
+      <stop offset="100%"></stop>
+    
+    
+    <marker id="arrowBlue">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#38bdf8"></polygon>
+    </marker>
+    <marker id="arrowGray">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"></polygon>
+    </marker>
+    <marker id="arrowGreen">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4ade80"></polygon>
+    </marker>
+    <marker id="arrowPurple">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"></polygon>
+    </marker>
+    
+      
+      
+    
+    
+      
+    
+  </defs>
+
+  
+  <rect width="900" height="760" fill="url(#gBG)" rx="16"></rect>
+
+  
+  
+  
+  <rect x="20" y="14" width="860" height="36" rx="8" fill="#1e293b" opacity="0.7"></rect>
+  <text x="450" y="37" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700" font-family="system-ui,sans-serif">LearnMate AI — System Architecture</text>
+  <rect x="28" y="22" width="8" height="20" rx="2" fill="#0062ff"></rect>
+  <text x="44" y="37" fill="#60a5fa" font-size="10" font-family="monospace">IBM Granite + IBM Cloud Lite</text>
+
+  
+  
+  
+  
+  <rect x="14" y="62" width="16" height="108" rx="4" fill="#0ea5e9" opacity="0.25"></rect>
+  <text x="22" y="162" text-anchor="middle" fill="#38bdf8" font-size="9" font-weight="700" font-family="system-ui" transform="rotate(-90,22,116)">FRONTEND</text>
+
+  
+  <rect x="14" y="184" width="16" height="78" rx="4" fill="#6366f1" opacity="0.25"></rect>
+  <text x="22" y="265" text-anchor="middle" fill="#a5b4fc" font-size="9" font-weight="700" font-family="system-ui" transform="rotate(-90,22,223)">API LAYER</text>
+
+  
+  <rect x="14" y="276" width="16" height="208" rx="4" fill="#7c3aed" opacity="0.25"></rect>
+  <text x="22" y="434" text-anchor="middle" fill="#c4b5fd" font-size="9" font-weight="700" font-family="system-ui" transform="rotate(-90,22,380)">AI AGENTS</text>
+
+  
+  <rect x="14" y="498" width="16" height="128" rx="4" fill="#0062ff" opacity="0.3"></rect>
+  <text x="22" y="596" text-anchor="middle" fill="#93c5fd" font-size="9" font-weight="700" font-family="system-ui" transform="rotate(-90,22,562)">IBM CLOUD</text>
+
+  
+  <rect x="14" y="638" width="16" height="92" rx="4" fill="#16a34a" opacity="0.25"></rect>
+  <text x="22" y="718" text-anchor="middle" fill="#86efac" font-size="9" font-weight="700" font-family="system-ui" transform="rotate(-90,22,684)">DATA</text>
+
+  
+  
+  
+  
+  <rect x="38" y="62" width="844" height="112" rx="10" fill="#0c2340" stroke="#0ea5e9" stroke-width="1.2" opacity="0.85"></rect>
+  <text x="56" y="82" fill="#38bdf8" font-size="10" font-weight="800" font-family="system-ui">React 18 + Vite 5  ·  localhost:3000</text>
+
+  
+  
+  <rect x="52" y="90" width="134" height="70" rx="7" fill="#0e3a5c" stroke="#38bdf8" stroke-width="1" filter="url(#shadow)"></rect>
+  <text x="119" y="112" text-anchor="middle" fill="#7dd3fc" font-size="10" font-weight="700">Onboarding</text>
+  <text x="119" y="126" text-anchor="middle" fill="#475569" font-size="8">3-step profile wizard</text>
+  <text x="119" y="139" text-anchor="middle" fill="#475569" font-size="8">Domain interests · Learning style</text>
+  <text x="119" y="152" text-anchor="middle" fill="#475569" font-size="8">Weekly hours setup</text>
+
+  
+  <rect x="200" y="90" width="134" height="70" rx="7" fill="#0e3a5c" stroke="#38bdf8" stroke-width="1" filter="url(#shadow)"></rect>
+  <text x="267" y="112" text-anchor="middle" fill="#7dd3fc" font-size="10" font-weight="700">Dashboard</text>
+  <text x="267" y="126" text-anchor="middle" fill="#475569" font-size="8">Progress overview hero</text>
+  <text x="267" y="139" text-anchor="middle" fill="#475569" font-size="8">AI recommendation panel</text>
+  <text x="267" y="152" text-anchor="middle" fill="#475569" font-size="8">Generate roadmap CTA</text>
+
+  
+  <rect x="348" y="90" width="134" height="70" rx="7" fill="#0e3a5c" stroke="#38bdf8" stroke-width="1" filter="url(#shadow)"></rect>
+  <text x="415" y="112" text-anchor="middle" fill="#7dd3fc" font-size="10" font-weight="700">Roadmap View</text>
+  <text x="415" y="126" text-anchor="middle" fill="#475569" font-size="8">Step cards + progress %</text>
+  <text x="415" y="139" text-anchor="middle" fill="#475569" font-size="8">Course links per step</text>
+  <text x="415" y="152" text-anchor="middle" fill="#475569" font-size="8">Adapt · Report tabs</text>
+
+  
+  <rect x="496" y="90" width="134" height="70" rx="7" fill="#0e3a5c" stroke="#38bdf8" stroke-width="1" filter="url(#shadow)"></rect>
+  <text x="563" y="112" text-anchor="middle" fill="#7dd3fc" font-size="10" font-weight="700">AI Coach Chat</text>
+  <text x="563" y="126" text-anchor="middle" fill="#475569" font-size="8">Granite chat interface</text>
+  <text x="563" y="139" text-anchor="middle" fill="#475569" font-size="8">Starter prompts</text>
+  <text x="563" y="152" text-anchor="middle" fill="#475569" font-size="8">Context memory (20 msgs)</text>
+
+  
+  <rect x="644" y="90" width="134" height="70" rx="7" fill="#0e3a5c" stroke="#38bdf8" stroke-width="1" filter="url(#shadow)"></rect>
+  <text x="711" y="112" text-anchor="middle" fill="#7dd3fc" font-size="10" font-weight="700">Assessment</text>
+  <text x="711" y="126" text-anchor="middle" fill="#475569" font-size="8">Quick (1-5 rating)</text>
+  <text x="711" y="139" text-anchor="middle" fill="#475569" font-size="8">Deep (Granite chat)</text>
+  <text x="711" y="152" text-anchor="middle" fill="#475569" font-size="8">Domain selector</text>
+
+  
+  <rect x="796" y="104" width="72" height="20" rx="4" fill="#0369a1" opacity="0.8"></rect>
+  <text x="832" y="118" text-anchor="middle" fill="#bae6fd" font-size="9" font-weight="700">Axios HTTP</text>
+  <rect x="796" y="130" width="72" height="20" rx="4" fill="#1e3a5f" opacity="0.8"></rect>
+  <text x="832" y="144" text-anchor="middle" fill="#60a5fa" font-size="9" font-weight="700">React Router 6</text>
+
+  
+  
+  
+  <line x1="450" y1="174" x2="450" y2="184" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrowBlue)"></line>
+  <text x="462" y="180" fill="#38bdf8" font-size="8">HTTP / JSON</text>
+
+  
+  
+  
+  <rect x="38" y="184" width="844" height="78" rx="10" fill="#0f172a" stroke="#6366f1" stroke-width="1.2" opacity="0.9"></rect>
+  <text x="56" y="204" fill="#a5b4fc" font-size="10" font-weight="800" font-family="system-ui">Flask 3.0 REST API  ·  localhost:5000  ·  Python 3.13</text>
+
+  
+  <rect x="52" y="213" width="190" height="36" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="0.8"></rect>
+  <text x="60" y="228" fill="#818cf8" font-size="8.5" font-weight="700">/api/students/</text>
+  <text x="60" y="241" fill="#475569" font-size="8">POST create · GET profile · PUT update · POST assess · POST goals</text>
+
+  
+  <rect x="254" y="213" width="370" height="36" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="0.8"></rect>
+  <text x="262" y="228" fill="#818cf8" font-size="8.5" font-weight="700">/api/roadmaps/</text>
+  <text x="262" y="241" fill="#475569" font-size="8">POST generate · GET roadmap · PUT progress · POST adapt · GET report · GET recommendation · POST chat</text>
+
+  
+  <rect x="636" y="213" width="100" height="36" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="0.8"></rect>
+  <text x="686" y="228" text-anchor="middle" fill="#818cf8" font-size="8.5" font-weight="700">/api/health</text>
+  <text x="686" y="241" text-anchor="middle" fill="#475569" font-size="8">GET status</text>
+
+  
+  <rect x="748" y="213" width="60" height="16" rx="3" fill="#312e81" opacity="0.9"></rect>
+  <text x="778" y="224" text-anchor="middle" fill="#c7d2fe" font-size="8" font-weight="700">CORS</text>
+  <rect x="748" y="233" width="60" height="16" rx="3" fill="#312e81" opacity="0.9"></rect>
+  <text x="778" y="244" text-anchor="middle" fill="#c7d2fe" font-size="8" font-weight="700">JWT Auth</text>
+
+  
+  <line x1="450" y1="262" x2="450" y2="276" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowPurple)"></line>
+  <text x="462" y="272" fill="#a78bfa" font-size="8">calls agents</text>
+
+  
+  
+  
+  <rect x="38" y="276" width="844" height="212" rx="10" fill="#0e0b1f" stroke="#7c3aed" stroke-width="1.5" opacity="0.9" filter="url(#shadow)"></rect>
+  <text x="56" y="296" fill="#c4b5fd" font-size="10" font-weight="800" font-family="system-ui">Agentic AI Layer  ·  5 Specialized Agents</text>
+
+  
+  <rect x="668" y="282" width="202" height="196" rx="8" fill="#1c1147" stroke="#7c3aed" stroke-width="1"></rect>
+  <text x="769" y="300" text-anchor="middle" fill="#a78bfa" font-size="9" font-weight="800">GraniteClient</text>
+  <text x="769" y="313" text-anchor="middle" fill="#6d28d9" font-size="8">(Singleton)</text>
+  <rect x="678" y="320" width="182" height="24" rx="4" fill="#2d1b6b"></rect>
+  <text x="769" y="336" text-anchor="middle" fill="#ddd6fe" font-size="8" font-weight="700">ibm-watsonx-ai SDK</text>
+  <rect x="678" y="349" width="182" height="20" rx="4" fill="#1a1040"></rect>
+  <text x="769" y="363" text-anchor="middle" fill="#93c5fd" font-size="8">granite-13b-instruct-v2</text>
+  <rect x="678" y="374" width="182" height="20" rx="4" fill="#1a1040"></rect>
+  <text x="769" y="388" text-anchor="middle" fill="#93c5fd" font-size="8">granite-13b-chat-v2</text>
+  <rect x="678" y="399" width="182" height="20" rx="4" fill="#1a1040"></rect>
+  <text x="769" y="413" text-anchor="middle" fill="#93c5fd" font-size="8">slate-125m-english-rtrvr</text>
+  <text x="769" y="434" text-anchor="middle" fill="#475569" font-size="7.5">Demo mode fallback</text>
+  <text x="769" y="446" text-anchor="middle" fill="#475569" font-size="7.5">when SDK not installed</text>
+  <text x="769" y="458" text-anchor="middle" fill="#475569" font-size="7.5">Smart JSON responses</text>
+
+  
+  <rect x="52" y="308" width="146" height="166" rx="7" fill="#1a0d3d" stroke="#8b5cf6" stroke-width="1" filter="url(#shadow)"></rect>
+  <rect x="52" y="308" width="146" height="22" rx="7" fill="#7c3aed" opacity="0.8"></rect>
+  <rect x="52" y="322" width="146" height="8" rx="0" fill="#7c3aed" opacity="0.8"></rect>
+  <text x="125" y="324" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">① Assessment Agent</text>
+  <text x="125" y="344" text-anchor="middle" fill="#c4b5fd" font-size="8.5" font-weight="700">assessment_agent.py</text>
+  <line x1="68" y1="350" x2="182" y2="350" stroke="#2d1b69" stroke-width="1"></line>
+  <text x="125" y="364" text-anchor="middle" fill="#94a3b8" font-size="8">Conversational skill eval</text>
+  <text x="125" y="376" text-anchor="middle" fill="#94a3b8" font-size="8">Granite Chat dialogue</text>
+  <text x="125" y="388" text-anchor="middle" fill="#94a3b8" font-size="8">JSON extraction (regex)</text>
+  <text x="125" y="400" text-anchor="middle" fill="#94a3b8" font-size="8">Quick 1-5 self-rating</text>
+  <text x="125" y="416" text-anchor="middle" fill="#475569" font-size="7.5">→ domain, level, score</text>
+  <text x="125" y="428" text-anchor="middle" fill="#475569" font-size="7.5">→ strengths, gaps</text>
+  <text x="125" y="440" text-anchor="middle" fill="#475569" font-size="7.5">→ recommended_start</text>
+  <rect x="66" y="452" width="118" height="14" rx="3" fill="#2d1b69"></rect>
+  <text x="125" y="463" text-anchor="middle" fill="#a78bfa" font-size="7.5" font-weight="700">Granite Chat Model</text>
+
+  
+  <rect x="208" y="308" width="146" height="166" rx="7" fill="#1a0d3d" stroke="#8b5cf6" stroke-width="1" filter="url(#shadow)"></rect>
+  <rect x="208" y="308" width="146" height="22" rx="7" fill="#6d28d9" opacity="0.8"></rect>
+  <rect x="208" y="322" width="146" height="8" rx="0" fill="#6d28d9" opacity="0.8"></rect>
+  <text x="281" y="324" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">② Learning Path Agent</text>
+  <text x="281" y="344" text-anchor="middle" fill="#c4b5fd" font-size="8.5" font-weight="700">roadmap_agent.py</text>
+  <line x1="224" y1="350" x2="338" y2="350" stroke="#2d1b69" stroke-width="1"></line>
+  <text x="281" y="364" text-anchor="middle" fill="#94a3b8" font-size="8">5-8 step roadmap gen</text>
+  <text x="281" y="376" text-anchor="middle" fill="#94a3b8" font-size="8">Granite Instruct JSON</text>
+  <text x="281" y="388" text-anchor="middle" fill="#94a3b8" font-size="8">Profile-aware prompts</text>
+  <text x="281" y="400" text-anchor="middle" fill="#94a3b8" font-size="8">Course catalog injection</text>
+  <text x="281" y="416" text-anchor="middle" fill="#475569" font-size="7.5">→ title, domain, role</text>
+  <text x="281" y="428" text-anchor="middle" fill="#475569" font-size="7.5">→ steps, ai_summary</text>
+  <text x="281" y="440" text-anchor="middle" fill="#475569" font-size="7.5">→ ai_tips, courses</text>
+  <rect x="222" y="452" width="118" height="14" rx="3" fill="#2d1b69"></rect>
+  <text x="281" y="463" text-anchor="middle" fill="#a78bfa" font-size="7.5" font-weight="700">Granite Instruct Model</text>
+
+  
+  <rect x="364" y="308" width="146" height="166" rx="7" fill="#1a0d3d" stroke="#8b5cf6" stroke-width="1" filter="url(#shadow)"></rect>
+  <rect x="364" y="308" width="146" height="22" rx="7" fill="#0369a1" opacity="0.85"></rect>
+  <rect x="364" y="322" width="146" height="8" rx="0" fill="#0369a1" opacity="0.85"></rect>
+  <text x="437" y="324" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">③ Course Rec. Agent</text>
+  <text x="437" y="344" text-anchor="middle" fill="#c4b5fd" font-size="8.5" font-weight="700">course_catalog.py</text>
+  <line x1="380" y1="350" x2="494" y2="350" stroke="#2d1b69" stroke-width="1"></line>
+  <text x="437" y="364" text-anchor="middle" fill="#94a3b8" font-size="8">8 domains × 4 levels</text>
+  <text x="437" y="376" text-anchor="middle" fill="#94a3b8" font-size="8">IBM SkillsBuild courses</text>
+  <text x="437" y="388" text-anchor="middle" fill="#94a3b8" font-size="8">Coursera / IBM certs</text>
+  <text x="437" y="400" text-anchor="middle" fill="#94a3b8" font-size="8">freeCodeCamp, Google</text>
+  <text x="437" y="416" text-anchor="middle" fill="#475569" font-size="7.5">→ title, provider, url</text>
+  <text x="437" y="428" text-anchor="middle" fill="#475569" font-size="7.5">→ duration, rating</text>
+  <text x="437" y="440" text-anchor="middle" fill="#475569" font-size="7.5">→ is_free, topics</text>
+  <rect x="378" y="452" width="118" height="14" rx="3" fill="#0c2a42"></rect>
+  <text x="437" y="463" text-anchor="middle" fill="#7dd3fc" font-size="7.5" font-weight="700">Static Catalog + IBM SkillsBuild</text>
+
+  
+  <rect x="52" y="480" width="220" height="0" rx="7" fill="none"></rect>
+  
+
+  
+  
+  <rect x="52" y="484" width="190" height="0" rx="7"></rect>
+  
+
+  
+  
+  
+
+  
+  <rect x="52" y="480" width="290" height="0" rx="6"></rect>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  <rect x="516" y="308" width="144" height="70" rx="6" fill="#1a0d3d" stroke="#4ade80" stroke-width="1"></rect>
+  <rect x="516" y="308" width="144" height="18" rx="6" fill="#15803d" opacity="0.8"></rect>
+  <rect x="516" y="320" width="144" height="6" fill="#15803d" opacity="0.8"></rect>
+  <text x="588" y="321" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="800">④ Progress Tracking Agent</text>
+  <text x="588" y="336" text-anchor="middle" fill="#86efac" font-size="7.5" font-weight="600">progress_agent.py</text>
+  <text x="588" y="350" text-anchor="middle" fill="#64748b" font-size="7.5">Step % · Weekly report · AI feedback</text>
+  <text x="588" y="362" text-anchor="middle" fill="#64748b" font-size="7.5">Days-since-activity · Next step</text>
+  <text x="588" y="374" text-anchor="middle" fill="#475569" font-size="7">Granite Instruct for reports</text>
+
+  
+  <rect x="516" y="388" width="144" height="86" rx="6" fill="#1a0d3d" stroke="#fb923c" stroke-width="1"></rect>
+  <rect x="516" y="388" width="144" height="18" rx="6" fill="#c2410c" opacity="0.8"></rect>
+  <rect x="516" y="400" width="144" height="6" fill="#c2410c" opacity="0.8"></rect>
+  <text x="588" y="401" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="800">⑤ Adaptive Learning Agent</text>
+  <text x="588" y="416" text-anchor="middle" fill="#fdba74" font-size="7.5" font-weight="600">roadmap_agent.py → adapt()</text>
+  <text x="588" y="430" text-anchor="middle" fill="#64748b" font-size="7.5">Feedback-driven roadmap updates</text>
+  <text x="588" y="442" text-anchor="middle" fill="#64748b" font-size="7.5">Chat coaching (20-msg context)</text>
+  <text x="588" y="454" text-anchor="middle" fill="#64748b" font-size="7.5">JSON adjustment patches</text>
+  <text x="588" y="466" text-anchor="middle" fill="#475569" font-size="7">Granite Chat + Instruct</text>
+
+  
+  <line x1="655" y1="383" x2="668" y2="390" stroke="#7c3aed" stroke-width="1" marker-end="url(#arrowPurple)"></line>
+  <line x1="655" y1="345" x2="668" y2="365" stroke="#7c3aed" stroke-width="1" marker-end="url(#arrowPurple)"></line>
+  <line x1="198" y1="390" x2="210" y2="390" stroke="#7c3aed" stroke-width="1" opacity="0.5"></line>
+  
+  <line x1="510" y1="420" x2="516" y2="420" stroke="#7c3aed" stroke-width="1"></line>
+  <line x1="198" y1="380" x2="208" y2="380" stroke="#7c3aed" stroke-width="1" opacity="0.3"></line>
+
+  
+  <line x1="450" y1="488" x2="450" y2="498" stroke="#4ade80" stroke-width="1.5" marker-end="url(#arrowGreen)"></line>
+  <text x="462" y="495" fill="#4ade80" font-size="8">API calls</text>
+
+  
+  
+  
+  <rect x="38" y="498" width="844" height="128" rx="10" fill="#001a52" stroke="#0062ff" stroke-width="1.5" opacity="0.95" filter="url(#glow)"></rect>
+  <text x="56" y="518" fill="#60a5fa" font-size="10" font-weight="800" font-family="system-ui">IBM Cloud Lite Services  ·  us-south.ml.cloud.ibm.com</text>
+
+  
+  <rect x="52" y="526" width="170" height="86" rx="7" fill="#001238" stroke="#0062ff" stroke-width="1.2" filter="url(#shadow)"></rect>
+  <rect x="52" y="526" width="170" height="22" rx="7" fill="url(#gIBM)"></rect>
+  <rect x="52" y="540" width="170" height="8" fill="url(#gIBM)"></rect>
+  <text x="137" y="541" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="800">IBM watsonx.ai</text>
+  <text x="137" y="558" text-anchor="middle" fill="#93c5fd" font-size="8">Core AI inference platform</text>
+  <text x="137" y="570" text-anchor="middle" fill="#64748b" font-size="7.5">ModelInference · APIClient</text>
+  <text x="137" y="582" text-anchor="middle" fill="#64748b" font-size="7.5">Credentials (IAM API Key)</text>
+  <text x="137" y="596" text-anchor="middle" fill="#475569" font-size="7.5">IBM_WATSONX_API_KEY</text>
+  <text x="137" y="608" text-anchor="middle" fill="#475569" font-size="7.5">IBM_WATSONX_PROJECT_ID</text>
+
+  
+  <rect x="234" y="526" width="148" height="86" rx="7" fill="#001238" stroke="#3b82f6" stroke-width="1"></rect>
+  <rect x="234" y="526" width="148" height="22" rx="7" fill="#1d4ed8"></rect>
+  <rect x="234" y="540" width="148" height="8" fill="#1d4ed8"></rect>
+  <text x="308" y="541" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">Granite 13B Instruct v2</text>
+  <text x="308" y="558" text-anchor="middle" fill="#93c5fd" font-size="8">Roadmap generation</text>
+  <text x="308" y="570" text-anchor="middle" fill="#64748b" font-size="7.5">Weekly progress reports</text>
+  <text x="308" y="582" text-anchor="middle" fill="#64748b" font-size="7.5">Adaptive adjustments</text>
+  <text x="308" y="596" text-anchor="middle" fill="#64748b" font-size="7.5">Skill gap analysis</text>
+  <text x="308" y="608" text-anchor="middle" fill="#475569" font-size="7">Max tokens: 1024 · Temp: 0.7</text>
+
+  
+  <rect x="394" y="526" width="148" height="86" rx="7" fill="#001238" stroke="#6366f1" stroke-width="1"></rect>
+  <rect x="394" y="526" width="148" height="22" rx="7" fill="#4338ca"></rect>
+  <rect x="394" y="540" width="148" height="8" fill="#4338ca"></rect>
+  <text x="468" y="541" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">Granite 13B Chat v2</text>
+  <text x="468" y="558" text-anchor="middle" fill="#a5b4fc" font-size="8">Conversational coach</text>
+  <text x="468" y="570" text-anchor="middle" fill="#64748b" font-size="7.5">Skill assessment dialogue</text>
+  <text x="468" y="582" text-anchor="middle" fill="#64748b" font-size="7.5">&lt;|system|&gt; prompt format</text>
+  <text x="468" y="596" text-anchor="middle" fill="#64748b" font-size="7.5">Sliding 20-msg window</text>
+  <text x="468" y="608" text-anchor="middle" fill="#475569" font-size="7">Max tokens: 512 · Temp: 0.6</text>
+
+  
+  <rect x="554" y="526" width="148" height="86" rx="7" fill="#001238" stroke="#16a34a" stroke-width="1"></rect>
+  <rect x="554" y="526" width="148" height="22" rx="7" fill="#15803d"></rect>
+  <rect x="554" y="540" width="148" height="8" fill="#15803d"></rect>
+  <text x="628" y="541" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">IBM Cloudant</text>
+  <text x="628" y="558" text-anchor="middle" fill="#86efac" font-size="8">NoSQL document store</text>
+  <text x="628" y="570" text-anchor="middle" fill="#64748b" font-size="7.5">Student profiles · Roadmaps</text>
+  <text x="628" y="582" text-anchor="middle" fill="#64748b" font-size="7.5">IAM API key auth</text>
+  <text x="628" y="596" text-anchor="middle" fill="#64748b" font-size="7.5">ibm-cloudant SDK 0.9.2</text>
+  <text x="628" y="608" text-anchor="middle" fill="#475569" font-size="7">Fallback: in-memory dict</text>
+
+  
+  <rect x="714" y="526" width="152" height="86" rx="7" fill="#001238" stroke="#f59e0b" stroke-width="1"></rect>
+  <rect x="714" y="526" width="152" height="22" rx="7" fill="#b45309"></rect>
+  <rect x="714" y="540" width="152" height="8" fill="#b45309"></rect>
+  <text x="790" y="541" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">IBM SkillsBuild</text>
+  <text x="790" y="558" text-anchor="middle" fill="#fcd34d" font-size="8">Free course catalog</text>
+  <text x="790" y="570" text-anchor="middle" fill="#64748b" font-size="7.5">8 domains · 4 skill levels</text>
+  <text x="790" y="582" text-anchor="middle" fill="#64748b" font-size="7.5">Linked in every step</text>
+  <text x="790" y="596" text-anchor="middle" fill="#64748b" font-size="7.5">+ Coursera/IBM certs</text>
+  <text x="790" y="608" text-anchor="middle" fill="#475569" font-size="7">+ freeCodeCamp + Google</text>
+
+  
+  <line x1="450" y1="626" x2="450" y2="638" stroke="#4ade80" stroke-width="1.5" marker-end="url(#arrowGreen)"></line>
+
+  
+  
+  
+  <rect x="38" y="638" width="844" height="92" rx="10" fill="#0a1f0a" stroke="#16a34a" stroke-width="1.2" opacity="0.9"></rect>
+  <text x="56" y="658" fill="#86efac" font-size="10" font-weight="800" font-family="system-ui">Data &amp; Storage Layer</text>
+
+  
+  <rect x="52" y="666" width="186" height="52" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="0.8"></rect>
+  <text x="145" y="682" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="700">Student Profile Document</text>
+  <text x="145" y="696" text-anchor="middle" fill="#475569" font-size="8">student_id · name · interests · skill_assessments</text>
+  <text x="145" y="708" text-anchor="middle" fill="#475569" font-size="8">goals · learning_style · weekly_hours · conversation_history</text>
+
+  
+  <rect x="250" y="666" width="186" height="52" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="0.8"></rect>
+  <text x="343" y="682" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="700">Roadmap Document</text>
+  <text x="343" y="696" text-anchor="middle" fill="#475569" font-size="8">roadmap_id · domain · target_role · total_weeks</text>
+  <text x="343" y="708" text-anchor="middle" fill="#475569" font-size="8">steps[] · ai_summary · ai_tips · overall_progress</text>
+
+  
+  <rect x="448" y="666" width="180" height="52" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="0.8"></rect>
+  <text x="538" y="682" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="700">Progress Log Entries</text>
+  <text x="538" y="696" text-anchor="middle" fill="#475569" font-size="8">timestamp · roadmap_id · step_number</text>
+  <text x="538" y="708" text-anchor="middle" fill="#475569" font-size="8">status · completion_% · notes</text>
+
+  
+  <rect x="640" y="666" width="106" height="52" rx="6" fill="#0c2a10" stroke="#4ade80" stroke-width="0.8"></rect>
+  <text x="693" y="682" text-anchor="middle" fill="#86efac" font-size="9" font-weight="700">IBM Cloudant</text>
+  <text x="693" y="696" text-anchor="middle" fill="#475569" font-size="8">Production</text>
+  <text x="693" y="708" text-anchor="middle" fill="#475569" font-size="8">NoSQL · JSON Docs</text>
+
+  <rect x="758" y="666" width="108" height="52" rx="6" fill="#0c2a10" stroke="#475569" stroke-width="0.8"></rect>
+  <text x="812" y="682" text-anchor="middle" fill="#64748b" font-size="9" font-weight="700">In-Memory Dict</text>
+  <text x="812" y="696" text-anchor="middle" fill="#475569" font-size="8">Local Dev Fallback</text>
+  <text x="812" y="708" text-anchor="middle" fill="#475569" font-size="8">_store dict · Python</text>
+
+  
+  <line x1="754" y1="668" x2="754" y2="716" stroke="#475569" stroke-width="1"></line>
+  <text x="756" y="690" fill="#475569" font-size="8" font-weight="700">OR</text>
+
+  
+  
+  
+  <rect x="38" y="740" width="844" height="12" rx="4" fill="#0f172a"></rect>
+  <text x="450" y="750" text-anchor="middle" fill="#334155" font-size="8">
+    Python 3.13 · Flask 3.0 · React 18 · Vite 5 · Axios · React Router 6 · IBM watsonx-ai SDK 1.1.2 · ibm-cloudant 0.9.2 · Pydantic · Gunicorn · Flask-CORS · Flask-JWT
+  </text>
+
+</svg>
+
+<div class="legend">
+  <div class="leg"><div class="leg-dot" style="background:#0ea5e9"></div> Frontend (React)</div>
+  <div class="leg"><div class="leg-dot" style="background:#6366f1"></div> API Layer (Flask)</div>
+  <div class="leg"><div class="leg-dot" style="background:#7c3aed"></div> AI Agents</div>
+  <div class="leg"><div class="leg-dot" style="background:#0062ff"></div> IBM Cloud Services</div>
+  <div class="leg"><div class="leg-dot" style="background:#16a34a"></div> Data / Storage</div>
+  <div class="leg"><div class="leg-dot" style="background:#f59e0b"></div> IBM SkillsBuild</div>
+  <div class="leg" style="font-size:.75rem;color:#475569">--- dashed = optional / fallback</div>
+</div>
+
+<footer>Made with IBM Bob  ·  AICTE Problem Statement #12 — Agentic AI for Personalized Course Pathways</footer>
+</body>
+</html>

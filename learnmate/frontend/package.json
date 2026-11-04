@@ -1,0 +1,28 @@
+{
+  "name": "learnmate-frontend",
+  "version": "1.0.0",
+  "description": "LearnMate – Agentic AI Personalized Course Pathways (IBM Granite)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "axios": "^1.7.4",
+    "lucide-react": "^0.441.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.6"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}

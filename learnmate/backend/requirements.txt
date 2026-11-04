@@ -1,0 +1,12 @@
+flask==3.0.3
+flask-cors==4.0.1
+flask-jwt-extended==4.6.0
+python-dotenv==1.0.1
+requests==2.32.3
+ibm-watsonx-ai==1.1.2
+ibm-cloud-sdk-core==3.20.3
+ibm-cloudant==0.9.2
+pydantic==2.7.4
+gunicorn==22.0.0
+python-json-logger==2.0.7
+cachetools==5.3.3
